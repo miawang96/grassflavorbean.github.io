@@ -52,8 +52,8 @@ document.addEventListener("DOMContentLoaded", function () {
       "line_linked": {
         "enable": true,
         "distance": 150,
-        "color": "#ffffff",
-        "opacity": 0.4,
+        "color": "#8baa41",
+        "opacity": 0.6,
         "width": 1
       },
       "move": {
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "events": {
         "onhover": {
           "enable": true,
-          "mode": "repulse"
+          "mode": "grab"
         },
         "onclick": {
           "enable": false,

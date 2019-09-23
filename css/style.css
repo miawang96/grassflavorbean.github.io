@@ -1,3 +1,46 @@
+.header-content {
+  display: flex;
+}
+.header-content-title {
+  flex: 3;
+  margin: 10px 20px;
+  border-right: 1px solid #000;
+}
+.header-content-nav {
+  display: flex;
+  flex-direction: row;
+  flex: 7;
+}
+.header-content-nav div {
+  margin: 10px 20px;
+  text-align: center;
+  flex: 1;
+  padding-bottom: 5px;
+}
+.header-content-nav div:hover {
+  color: #304911;
+  border-bottom: 1px solid #304911;
+}
+.header-content-nav div:active {
+  color: #304911;
+  border-bottom: 1px solid #304911;
+}
+.header-content-nav a {
+  text-decoration-style: none;
+}
+.archive {
+  padding: 10px 180px;
+}
+.archive-year {
+  font-size: 18px;
+  color: #8baa41;
+  margin-bottom: 5px;
+}
+.archive-post {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 15px 15px;
+}
 html,
 body {
   height: 100%;
@@ -9,17 +52,20 @@ body {
   padding: 10px;
   position: relative;
   background-color: #fff;
+  font-size: 16px;
 }
 .footer {
   width: 60%;
+  font-size: 55px;
   margin: 0 auto;
   text-align: center;
-  font-family: Pacifico;
-}
-.outer {
-  border: 1px solid #000;
+  font-family: Sweet Getaway;
 }
 @font-face {
   font-family: Pacifico;
   src: url("fonts/Pacifico.ttf");
+}
+@font-face {
+  font-family: Sweet Getaway;
+  src: url("fonts/Sweet Getaway.ttf");
 }
