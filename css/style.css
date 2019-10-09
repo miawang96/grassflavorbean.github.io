@@ -16,17 +16,27 @@
   text-align: center;
   flex: 1;
   padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
+}
+.header-content-nav div:visited {
+  color: #f00;
 }
 .header-content-nav div:hover {
-  color: #304911;
   border-bottom: 1px solid #304911;
 }
-.header-content-nav div:active {
-  color: #304911;
-  border-bottom: 1px solid #304911;
+.header-content-nav div a {
+  color: #000;
+  text-decoration: none;
 }
-.header-content-nav a {
-  text-decoration-style: none;
+.brief-post {
+  padding: 0 100px;
+}
+.brief-post-title {
+  font-size: 20px;
+}
+.brief-post-brief {
+  color: #aaa;
 }
 .archive {
   padding: 10px 180px;
@@ -40,6 +50,10 @@
   display: flex;
   flex-direction: row;
   margin: 0 0 15px 15px;
+}
+.archive-post-title a {
+  color: #000;
+  text-decoration: none;
 }
 .article {
   padding: 0 100px;
