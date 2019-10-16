@@ -12,15 +12,13 @@
   flex: 7;
 }
 .header-content-nav div {
+  font-size: 18px;
   margin: 10px 20px;
   text-align: center;
   flex: 1;
   padding-bottom: 5px;
   border-bottom: 1px solid #fff;
   cursor: pointer;
-}
-.header-content-nav div:visited {
-  color: #f00;
 }
 .header-content-nav div:hover {
   border-bottom: 1px solid #304911;
@@ -30,13 +28,31 @@
   text-decoration: none;
 }
 .brief-post {
-  padding: 0 100px;
+  margin: 0 100px;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
 }
 .brief-post-title {
-  font-size: 20px;
+  font-size: 23px;
+}
+.brief-post-title a {
+  color: #000;
+  text-decoration: none;
 }
 .brief-post-brief {
+  padding: 5px 0;
   color: #aaa;
+  font-size: 14px;
+}
+.brief-post-more {
+  font-size: 14px;
+}
+.brief-post-more a {
+  color: #000;
+  text-decoration: none;
+}
+.brief-post-more:hover {
+  text-decoration: underline;
 }
 .archive {
   padding: 10px 180px;
@@ -68,23 +84,75 @@
 .article-meta-detail div {
   flex: 1;
 }
+.guide {
+  display: flex;
+  margin-bottom: 5px;
+}
+.guide-left {
+  flex: 1;
+  text-align: left;
+}
+.guide-right {
+  flex: 1;
+  text-align: right;
+}
+.guide a {
+  text-decoration: none;
+  color: #000;
+}
+.guide a:hover {
+  text-decoration: underline;
+}
+.pager {
+  padding: 0 100px;
+}
+.pager .extend,
+.pager .page-number {
+  margin-right: 10px;
+}
+.pager .extend:hover,
+.pager .page-number:hover {
+  border-bottom: 1px solid #000;
+}
+.pager .current {
+  border-bottom: 1px solid #000;
+}
+.pager a {
+  text-decoration: none;
+  color: #000;
+}
 .back-to-top {
   position: fixed;
   bottom: 10px;
   right: 100px;
-  border: 1px solid #8baa41;
-  border-radius: 3px;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  line-height: 30px;
-  background: #8baa41;
+  width: 25px;
+  height: 25px;
+  border-top: 3px solid #c7ba7e;
+  border-right: 3px solid #c7ba7e;
+  transform: rotate(-45deg);
   cursor: pointer;
+}
+.end-line {
+  display: flex;
+  margin: 40px 0;
+  align-items: center;
+}
+.end-line-left,
+.end-line-right {
+  flex: 4;
+  border-bottom: 1px solid #eee;
+}
+.end-line-middle {
+  flex: 2;
+  font-family: Pacifico;
+  color: #8baa41;
+  text-align: center;
 }
 html,
 body {
   height: 100%;
   background-color: #f5f7f9;
+  font-family: "等线";
 }
 #container {
   width: 60%;
@@ -108,4 +176,9 @@ body {
 @font-face {
   font-family: Sweet Getaway;
   src: url("fonts/Sweet Getaway.ttf");
+}
+@media screen and (max-width: 782px) {
+  #container {
+    background-color: #008000;
+  }
 }
