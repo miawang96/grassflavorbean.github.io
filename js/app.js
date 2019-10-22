@@ -1,4 +1,6 @@
-/* sweetScroll load */
+ /**
+  * Particle.js configuration part
+  */
 document.addEventListener("DOMContentLoaded", function () {  
 
   /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
@@ -117,3 +119,24 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById('particles-js').setAttribute('style', 'position: fixed');
 
 }, false);
+
+(function($){
+  /**
+   * Back to top animation part
+   */
+  $('#back-to-top').on('click', function() {
+    $('body,html').animate({ scrollTop: 0 }, 500);
+  });
+
+  /**
+   * Velocity.js animation configuration part.
+   */
+  $(window).ready(function() {
+    $('#header').velocity("fadeOut", { delay: 1500, duration: 1500 });
+  })
+
+})(jQuery);
+
+ 
+
+  
