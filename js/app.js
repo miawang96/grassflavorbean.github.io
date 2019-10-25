@@ -132,7 +132,8 @@ document.addEventListener("DOMContentLoaded", function () {
    * Velocity.js animation configuration part.
    */
   $(window).ready(function() {
-    $('#header').velocity("fadeOut", { delay: 1500, duration: 1500 });
+    $('#header').velocity("fadeIn", { duration: 1500 });
+    $('.brief-post').velocity("fadeIn", { duration: 2500 });
   })
 
 })(jQuery);
